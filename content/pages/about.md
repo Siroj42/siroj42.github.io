@@ -1,10 +1,10 @@
 title: About
 layout: post
-date: 2016-06-02 17:27:47 +0200
+date: 2021-02-06 18:40:00 +0100
 comments: true
 tags: blog-o-matic
 description:
 
 ### Who am I?
 
-I'm an enthusiast that just started his blog, check it out!
+I'm a student and code in my freetime. I am interested in Free Software and more specifically Linux. I use and love the Gnome Desktop Environment. Also, I'm a socialist.
