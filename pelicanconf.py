@@ -6,63 +6,61 @@ import datetime
 # THINGS TO CONFIGURE
 # ---------------------------------------------------------------------
 
-AUTHOR = "A blog-o-matic user"
-SITENAME = "My personal blog with blog-o-matic"
-SITESUBTITLE = "This is where I do test things"
-SITEURL = "/"
+AUTHOR = "Siroj42"
+SITENAME = "Siroj42's blog"
+SITESUBTITLE = "A blog without a known purpose"
+SITEURL = "https://siroj42.github.io"
 DEFAULT_LANG = "en"
 DEFAULT_CATEGORY = "blog"
-CLAIM_GOOGLE = "Bk4Z5ucHLyPXqlZlj5LzANpYBBSvxqBW4E8i-Kwf-bQ"
-CLAIM_BING = "8FF1B025212A47B5B27CC47163A042F0"
+SITELOGO = SITEURL + "/content/images/logo.png"
 
 
-LANDING_PAGE_ABOUT = {
-    "title": "My blog",
-    "details": """<p>This website contains Info that might be interesting for you, enjoy!</p>""",
-}
+#LANDING_PAGE_ABOUT = {
+#    "title": "My blog",
+#    "details": """<p>This website contains Info that might be interesting for you, enjoy!</p>""",
+#}
 
 
-PROJECTS = [
-    {
-        "name": "Blog-o-matic",
-        "url": "https://github.com/iranzo/blog-o-matic",
-        "description": "Canned blog automation for quickly setting up a blog with Pelican",
-    },
-    {
-        "name": "Citellus",
-        "url": "https://citellus.org",
-        "description": "Troubleshooting automation tool with easy to contribute rules",
-    },
-    {
-        "name": "Pablo Iranzo Blog",
-        "url": "https://iranzo.github.io",
-        "description": "Other projects at Github website",
-    },
-    {
-        "name": "Redken Telegram BOT",
-        "url": "https://t.me/redken_bot",
-        "description": "A Telegram bot with support for Karma, RSS Feeds, Quotes, etc",
-    },
-]
+#PROJECTS = [
+#    {
+#        "name": "Blog-o-matic",
+#        "url": "https://github.com/iranzo/blog-o-matic",
+#        "description": "Canned blog automation for quickly setting up a blog with Pelican",
+#    },
+#    {
+#        "name": "Citellus",
+#        "url": "https://citellus.org",
+#        "description": "Troubleshooting automation tool with easy to contribute rules",
+#    },
+#    {
+#        "name": "Pablo Iranzo Blog",
+#        "url": "https://iranzo.github.io",
+#        "description": "Other projects at Github website",
+#    },
+#    {
+#        "name": "Redken Telegram BOT",
+#        "url": "https://t.me/redken_bot",
+#        "description": "A Telegram bot with support for Karma, RSS Feeds, Quotes, etc",
+#    },
+#]
 
 
-LINKS = (
-    ("Redken on telegram", "https://t.me/redken_bot"),
-    ("RHJobs channel on TG", "https://t.me/rhjobs"),
-)
+#LINKS = (
+#    ("Redken on telegram", "https://t.me/redken_bot"),
+#    ("RHJobs channel on TG", "https://t.me/rhjobs"),
+#)
 
 # Keep 'name' like 'twitter' with what 'FontAwesome has for putting the right icon'
 
 SOCIAL = (
-    ("Twitter", "http://twitter.com/iranzop"),
-    ("github", "http://github.com/iranzo"),
-    ("linkedin", "https://www.linkedin.com/in/iranzo/"),
+    ("github", "https://github.com/siroj42"),
+    ("gitlab", "https://gitlab.com/siroj42")
 )
 
 
 # TWITTER_USERNAME = "fillit"
 # Update if you use amazon links
-AMAZON_ONELINK = "23824450-ef77-4537-9259-8590465886f1"
+#AMAZON_ONELINK = "23824450-ef77-4537-9259-8590465886f1"
 
 # GOOGLE_ANALYTICS tracking ID
 # GOOGLE_ANALYTICS = "UA-81705-12"
@@ -151,36 +149,11 @@ PLUGINS = [
 # 'better_codeblock_line_numbering'
 # 'better_figures_and_images'
 
-THEME = "themes/elegant"
+THEME = "themes/flex"
 
-# elegant
-TYPOGRIFY = True
-RECENT_ARTICLE_SUMMARY = True
-RESPONSIVE_IMAGES = True
-
-MARKDOWN = {
-    "extension_configs": {
-        "markdown.extensions.codehilite": {"css_class": "highlight", "linenums": True},
-        "markdown.extensions.extra": {},
-        "markdown.extensions.toc": {"permalink": "true"},
-        "markdown.extensions.meta": {},
-        "markdown.extensions.admonition": {},
-    },
-    "output_format": "html5",
-}
-
-DIRECT_TEMPLATES = ("index", "tags", "categories", "archives", "search", "404")
-
-# Elegant Labels
-SOCIAL_PROFILE_LABEL = "Stay in Touch"
-RELATED_POSTS_LABEL = "Keep Reading"
-SHARE_POST_INTRO = "Like this post? Share on:"
-COMMENTS_INTRO = ""
-
-FILENAME_METADATA = r"(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)"
-USE_FOLDER_AS_CATEGORY = False
-
-SEARCH_BOX = False
+# flex
+THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
+THEME_COLOR_ENABLE_USER_OVERRIDE = True
 
 # URL Settings to be compatible with octopress
 ARTICLE_URL = "blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/"
